@@ -5,8 +5,8 @@ from twilio.rest import Client
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-account_sid = 'AC650de3253b98cc92af5d6d960016ffc5'
-auth_token = '49104196ae1254052fd39ee6b3bafc58'
+account_sid = #SID
+auth_token = #TOKEN
 client = Client(account_sid, auth_token)
 
 print('WARNING : When writing your callnumber, you should write it like this -> 10 1234 1234')
