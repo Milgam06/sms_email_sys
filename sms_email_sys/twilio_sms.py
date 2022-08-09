@@ -35,7 +35,7 @@ print(message.sid)
 
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
-s.login("milgamfruit@gmail.com", "yoeslssmohneydgu")
+s.login("milgamfruit@gmail.com", #APP_PASSWORD)
 msg = MIMEText(messageBody)
 msg["Subject"] = messageTitle
 s.sendmail('milgamfruit@gmail.com', email, msg.as_string())
