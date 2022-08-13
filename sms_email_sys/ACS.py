@@ -13,4 +13,4 @@ for _ in range(3):
 
 print(codes)
 
-tw.setting('AC650de3253b98cc92af5d6d960016ffc5','e74ce99ace232b9f75adea2bb55503f2')
+tw.setting(account_sid, auth_token)
