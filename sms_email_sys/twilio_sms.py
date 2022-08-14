@@ -31,7 +31,7 @@ def message():
     
     message = Client(account_sid,auth_token).messages.create(
         to='+82 ' + callnum,
-        from_='+17432007538',
+        from_= #twilioNumber,
         body=(messageTitle.upper() + "\n" + messageBody)
         )
     print(message.sid)  
@@ -47,8 +47,8 @@ if "@" not in email:
 
 s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls()
-s.login("milgamfruit@gmail.com", "yoeslssmohneydgu")
+s.login(#email, #appPassword)
 msg = MIMEText(messageBody)
 msg["Subject"] = messageTitle.upper()
-s.sendmail('milgamfruit@gmail.com', email, msg.as_string())
+s.sendmail( #sendEmail , email, msg.as_string())
 s.quit()
